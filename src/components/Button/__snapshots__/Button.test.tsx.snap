@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #2F80ED;
+  border-radius: 10px;
+  border: none;
+  color: #f2f2f2;
+  height: 42px;
+  width: 100%;
+}
+
+<button
+    class="c0"
+    data-testid="finish-button"
+  >
+     Finish
+  </button>
+</DocumentFragment>
+`;
