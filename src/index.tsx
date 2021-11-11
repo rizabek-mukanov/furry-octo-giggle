@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from 'styled-components';
+
+import 'antd/dist/antd.css';
+import { theme } from './theme';
+import { StateProvider } from './useState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StateProvider>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
